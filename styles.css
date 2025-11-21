@@ -74,6 +74,8 @@ header{
     background-size: contain;
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
+    display: flex;
+    flex-direction: column;
 }
 
 /* For All Headings */
@@ -137,6 +139,9 @@ nav ul{
     padding: 0;
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
+    display: flex;
+    gap: 1rem;
+    
 }
 
 nav a{
@@ -165,6 +170,9 @@ nav a span{
     position: relative;
     /* Styles were added here to arrange the content, I used top and z-index for this */
     /* TO DO */
+    position: relative;
+    top: -145px;
+    z-index: 1;
 }
 
 nav a:focus{
@@ -224,17 +232,26 @@ p{
     padding: 96px 32px;
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    
+
 }
 
 #plants h3, #plants > p{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    grid-column: 1 / -1;
 }
 
 #plants section{
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
     margin: 32px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 #plants h4{
@@ -244,6 +261,7 @@ p{
 #plants img{
     /* Styles were added here to arrange the content, I used a property for a flexbox child to change the order that the content appears on the page */
     /* TO DO */
+    order: -1;
     width: 100%;
     max-width: 400px;
     height: auto;
@@ -265,12 +283,19 @@ p{
     padding: 64px 32px;
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    
 }
 
 /* Contact Heading and Paragraph */
 #contact h3, #contact > p{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    order: 0;
+    grid-column: 1 / -1;
+       
 }
 
 /* Contact text color */
@@ -361,12 +386,16 @@ th:nth-of-type(even), td:nth-of-type(even){
     margin: 16px auto;
     list-style-type: none;
     padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
 }
 
 /* Heading for Social Media Section */
 #social h4{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    order: 0;
 }
 
 #social a{
